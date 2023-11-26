@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_advanced_appointment/core/Theming/styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 class DocLogoAndName extends StatelessWidget {
@@ -12,11 +13,7 @@ class DocLogoAndName extends StatelessWidget {
         SvgPicture.asset('assets/svgs/doc_logo.svg'),
         SizedBox(width: 10.w,),
         Text('DocDOc',
-        style: TextStyle(
-          color: Colors.black,
-          fontSize: 24.sp,
-          fontWeight: FontWeight.w700,
-        ),)
+        style: TextStyles.font24Black700Weight,)
       ],
     );
   }
