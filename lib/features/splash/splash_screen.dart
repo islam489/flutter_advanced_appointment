@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
       splashIconSize: 800.0,
       duration: 1000,
         splash: 'assets/images/splash.png',
-        nextScreen: const OnBoardingScreen(),
+        nextScreen: const OnboardingScreen(),
       splashTransition: SplashTransition.slideTransition,
     );
   }
