@@ -10,7 +10,7 @@ class PasswordValidations extends StatelessWidget {
   final bool hasSpecialCharacters;
   final bool hasNumber;
   final bool hasMinLength;
-  const PasswordValidations({
+   PasswordValidations({
     super.key,
     required this.hasLowercase,
     required this.hasUppercase,
