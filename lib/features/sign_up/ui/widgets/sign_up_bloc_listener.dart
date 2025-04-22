@@ -15,7 +15,7 @@ class SignupBlocListener extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<SignupCubit, SignupState>(
       listenWhen: (previous, current) =>
-      current is SignupLoading ||
+          current is SignupLoading ||
           current is SignupSuccess ||
           current is SignupError,
       listener: (context, state) {
@@ -60,9 +60,9 @@ class SignupBlocListener extends StatelessWidget {
             TextButton(
               child: const Text('Continue'),
               style: TextButton.styleFrom(
-                primary: Colors.white,
+                foregroundColor: Colors.white,
                 backgroundColor: Colors.blue,
-                onSurface: Colors.grey,
+                disabledForegroundColor: Colors.grey.withOpacity(0.38),
               ),
               onPressed: () {
                 context.pushNamed(Routes.loginScreen);
